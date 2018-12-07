@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 183476666}
-  enemy: {fileID: 1315318833347410, guid: 2ad6349ff1ea8214aba3d0d497f0c0a3, type: 2}
+  enemy: {fileID: 1547040638173590, guid: e33a732a1dc51bb42a4baeea4eeecfd7, type: 2}
   timeOut: 1
   aMin: 0
   aMax: 360

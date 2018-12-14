@@ -102,8 +102,8 @@ NavMeshSettings:
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    ledgeDropHeight: 3
+    maxJumpAcrossDistance: 1
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
@@ -112,7 +112,12 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: f81a9b23310c8694c9add3dff8e8226e, type: 2}
+--- !u!4 &18701237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 406200845}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,11 +184,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &183476666 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 406200845}
 --- !u!1001 &406200845
 Prefab:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 943737019}
   - component: {fileID: 943737018}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CreateObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,15 +344,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af23af4ce51abff4b842d15c535810db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 183476666}
-  enemy: {fileID: 1547040638173590, guid: e33a732a1dc51bb42a4baeea4eeecfd7, type: 2}
+  playerTransform: {fileID: 18701237}
+  enemy: {fileID: 1895791566621372, guid: 551a44a264b5b484399576dd2fa44bdf, type: 2}
   timeOut: 1
   aMin: 0
   aMax: 360
   rMin: 20
   rMax: 40
-  yMin: 5
-  yMax: 10
+  yMin: 3
+  yMax: 5
 --- !u!4 &943737019
 Transform:
   m_ObjectHideFlags: 0

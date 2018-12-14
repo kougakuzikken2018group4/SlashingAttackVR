@@ -15,7 +15,7 @@ public class AddObjectScript : MonoBehaviour {
     public int yMin, yMax;
     Vector3 localPos;
     System.Random random = new System.Random();
-
+    public int limitEnemyNum;
 
     void Update()
     {
@@ -40,7 +40,7 @@ public class AddObjectScript : MonoBehaviour {
             localPos.z += z;
             localPos.y = y;
 
-            if(GameObject.FindGameObjectsWithTag("Enemy").Length <= 10)
+            if(GameObject.FindGameObjectsWithTag("Enemy").Length <= limitEnemyNum)
             {
                 Instantiate(enemy, localPos, transform.rotation);
             }
